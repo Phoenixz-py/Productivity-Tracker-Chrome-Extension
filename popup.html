@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 200px;
+    }
+    input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      width: 100%;
+    }
+    #message {
+      margin-top: 10px;
+      font-size: 14px;
+      color: red;
+    }
+    #success {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h3>Block a Site</h3>
+  <input type="text" id="siteInput" placeholder="Enter site URL (e.g. facebook.com)" />
+  <button id="blockSiteButton">Block Site</button>
+  <p id="statusMessage"></p>
+
+  <h2>Site Tracking</h2>
+  <div id="dailyReport">Loading...</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
